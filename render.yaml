@@ -1,0 +1,19 @@
+services:
+  - type: worker
+    name: erenka-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python AH_FIXED.PY
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: GET_INFO_KEY
+        sync: false
+      - key: LEAK_API_KEY
+        sync: false
+      - key: TG_TO_NUM_KEY
+        sync: false
+      - key: BOMBER_KEY
+        sync: false
+      - key: TG_BOMBER_KEY
+        sync: false
